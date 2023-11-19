@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6351158a28.js" crossorigin="anonymous"></script>
+    <title>We Want to Hear From You!</title>
+</head>
+
+<body>
+    <header>
+
+
+        <!--ask for header code-->
+
+        
+        <div class="title">5Calls Logo</div>
+        <nav>
+            <ul class="header-links">
+                <li><a href="">HOME</a></li>
+                <li><a href="">WHO WE ARE</a></li>
+                <li><a href="">ISSUES</a></li>
+                <li><a href="">CONTACT</a></li>
+                <button type="donate">DONATE</button>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!---main section needs work still and paragraph edits-->
+
+
+    <h2>We Want to Hear From You!</h2>
+    <p>
+        Dear Advocates,
+        <br><br>
+        Your voice matters, and we want to hear about the causes that matter most to you. If there's a cause not
+        represented on our platform, now's your chance to change that. <br><br>
+        Please refer to our FAQ and Common Questions Picture Guide for a walk through of our site. If you still cant
+        find what youre looking for, email us at: hello@5calls.org or fill out the form below!
+    </p>
+
+
+    <!--FLOATING/SCROLLING BUTTON W/ DROP DOWN MENU?-->
+
+
+    <aside class="sidebar">
+        <p>
+            <button type="help">HELP</button>
+        </p>
+    </aside>
+
+    <fieldset>
+
+
+        <!--floating labels via css or bootstrap? idk if most accessible-->
+
+
+        <legend>Submission Form</legend>
+        <form>
+            <p>
+                <label>Name: <br> <input name="Name" /></label>
+            </p>
+            <p>
+                <label>E-mail: <br> <input name="email" type="email" /></label>
+            </p>
+            <p>
+                <label>Phone(Optional): <br> <input name="phonenumber" /></label>
+            </p>
+            <p> 
+                <!--radio buttons??-->
+
+                <label> Submission Type: <br>
+                <select name="type">
+                    <option>--None--</option>
+                    <option>Issue Suggestion</option>
+                    <option>Feedback</option>
+                    <option>IT Supoort</option>
+                </select>
+            </label>
+            </p>
+            <p>
+                <label>Subject: <br> <input name="subject" type="subject" /></label>
+            </p>
+            <p>
+                <!-- how do i expand this text box, css?-->
+                <label>Message:</label> <br>
+                <textarea name=Text Box>
+
+                </textarea>
+            </p>
+            <p>
+                <button type="submit">SUBMIT</button>
+            </p>
+        </form>
+    </fieldset>
+
+
+<!--Accessibility placeholder (radial dial etc.) BOTTOM LEFT-->
+
+
+    <button type="aria" accessibility placeholder>accessibility button</button>
+
+
+
+<!-- ask eden for footer-->
+
+
+    <footer>
+        <footer>
+
+            <h2 class="visually-hidden">Footer Navigation</h2>
+    
+            <div class="social-and-list2">
+                <ul class="social-list" id="socialList" aria-labelledby="socialList">
+                    <li><a href="https://twitter.com/make5calls" class="social-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/5calls/" class="social-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/make5calls" class="social-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/5calls/5calls" class="social-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                </ul>
+    
+                <ul class="list2" id="list2" aria-labelledby="list2">
+                    <li role="listitem"><a href="#" role="link" aria-label="help">Help</a></li>
+                    <li role="listitem"><a href="#" role="link" aria-label="contact">Contact</a></li>
+                    <li role="listitem"><a href="#" role="link" aria-label="feedback">Feedback</a></li>
+                </ul>
+            </div>
+            <ul class="list3" id="list3" aria-labelledby="list3">
+                <li role="listitem"><a href="https://5calls.org/privacy/" role="link" aria-label="privacy">Privacy</a></li>
+                <li role="listitem"><a href="#" role="link" aria-label="accessibility">Accessibility</a></li>
+                <li role="listitem"><a href="https://5calls.org/troubleshooting/" role="link" aria-label="troubleshooting">Troubleshooting</a></li>
+            </ul>         
+        
+        </footer>
+    </footer>
+</body>
+
+</html>
