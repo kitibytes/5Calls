@@ -1,1 +1,42 @@
 /* There is nothing here... */
+h1 {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 2.5rem; 
+    letter-spacing: 0.2rem
+}
+
+h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* footer */
+footer {
+    margin: 0;
+    padding: 0;
+
+}
+footer ul  {
+    list-style-type: none;
+    Display: flex;
+    Flex-direction: row;
+}
+
+.social-and-list2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
