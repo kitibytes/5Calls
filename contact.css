@@ -1,3 +1,118 @@
+
 #message{
     height: 60px;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    SIZE: 2.5REM;
+    padding-top: 10px;
+    text-align:center;
+    color: #F9FCFB;
+}
+i{
+    color:#F9FCFB;
+}
+#donate{
+    padding:5px;
+    color: black;
+    background-color: #F9FCFB;
+    text-decoration:none;
+}
+h2{
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+}
+p{
+    text-align:center;
+    color: #F9FCFB;
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+nav{
+
+    text-align:end;
+    background-color: #1875D1;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+form{
+    text-align:center; 
+    padding-bottom: 20px;
+    color: #F9FCFB;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+#issue{
+    
+    margin-right: 55px;
+}
+#other{
+    margin-right: 107px;
+}
+#popout{
+    background-color: #0037AE;
+    margin: 55px;
+}
+.intro{
+    margin-left:50px;
+    margin-right: 50px;
+    
+}
+
+#logo{
+    padding-top:20px;
+    height:200px;
+    
+}
+.logo{
+    text-align: center;
+}
+body{
+    margin:0;
+    padding:0;
+}
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: #F9FCFB;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #F9FCFB;
+  }
+  .flex-container {
+    display: flex;
+    gap: 10px;
+    
+    
+}
+
+.flex-child {
+    flex-basis: 100%;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+
+} 
+footer{
+    text-align: center;
+    padding: 30px;
+}
+#submit{
+    border-radius: 5px;
 }
