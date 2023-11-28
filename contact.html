@@ -4,44 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6351158a28.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
 
     <nav>
+        <b>
         <a href="#">Home</a> 
-        <a href="#">Who We Are</a> 
-        <a href="#">Issues</a> 
-        <a href="#">Contact</a>
-        <a href="#">Donate</a>
         <i class="fa-solid fa-angle-down"></i>
+        <a href="#">Who We Are</a> 
+        <i class="fa-solid fa-angle-down"></i>
+        <a href="#">Issues</a> 
+        <i class="fa-solid fa-angle-down"></i>
+        <a href="#">Contact</a>
+        <i class="fa-solid fa-angle-down"></i>
+        <a id="donate" href="#">Donate</a>
+        </b>
+
     </nav>
+    <div class="logo">
+    <img src="logo.png" alt="Logo" id="logo">
+    </div>
+
+    <div id="popout">
     <h1>
-        Contact Us!
+        CONTACT US
     </h1>
-    <p>
+    <p class="intro">
         We want to hear from you! Reach out to us using the form below, or email us at hello@5calls.org
     </p>
+   
     <form>
         <label for="name">NAME:</label><br>
         <input type="text" id="name" name="name"><br>
         <label for="email">EMAIL:</label><br>
-        <p>
-            INTEREST
-        </p>
-        <input type="text" id="email" name="email"><br><br>
+        <input type="text" id="email" name="email"><br>
+        <p>INTEREST</p>
+        <div id="buttons">
         <input type="radio" id="collaboration" name="fav_language" value="HTML">
-        <label for="html">Collaboration Request</label><br>
-        <input type="radio" id="issue" name="fav_language" value="CSS">
-        <label for="css">Issue Request</label><br>
-        <input type="radio" id="other" name="fav_language" value="JavaScript">
-        <label for="javascript">Other</label><br><br>
+        <label id="collaboration" for="html">Collaboration Request</label><br>
+        <input type="radio"  name="fav_language" value="CSS">
+        <label id="issue" for="css"> Issue Request</label><br>
+        <input type="radio" name="fav_language" value="JavaScript">
+        <label id="other"for="javascript">Other</label>
+        </div>
+        <br>
         <label for="message">TELL US MORE:</label><br>
         <input type="text" id="message" name="message"><br><br>
-        <input type="submit" value="Submit">
+        <input id="submit" type="submit" value="Submit">
       </form> 
-      <br>
+    </div>
+      <h2 id="second_header">
+        Want to get involved?
+      </h2>
+      <div class="flex-container">
+
+        <div class="flex-child">
+          DM us on Twitter <br> Message<a href="https://twitter.com/make5calls" style="color:blue;">@make5calls</a>
+        </div>
+        
+        <div class="flex-child">
+          Tell us how you'd like to help <br> Email hello@5calls.org
+        </div>
+
+        <div class="flex-child">
+           Contribute on Github <br> Browse our starter issues for  <a href="https://github.com/5calls/5calls#Front_End" style="color:blue;">Web,</a><a href="https://github.com/5calls/ios" style="color:blue;">IOS,</a> <a href="https://github.com/5calls/android" style="color:blue;">Android</a>
+        </div>
+        
+      </div>
     <footer>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-facebook"></i>
