@@ -1,16 +1,11 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 60px);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{  
- margin: 0;
- 
- }
-
- html, body {
-    overflow-x: hidden;
 }
 
 .headers {
@@ -176,7 +171,7 @@ body{
 #section2 h2 {
     font-size: 30px;
     text-align: center;
-    padding-top: 1em;
+    padding-top: 2em;
  }
 
 .search-section {
@@ -274,9 +269,8 @@ font-weight: bold;
     background-color: #F9FCFB;
 height: auto;
 flex-direction: column;
-    justify-content: center; /* this centers content vertically in the container */
-    text-align: center; /* this centers the text lines */
-    margin: auto; /* centers the section if it is not full width */
+    justify-content: center; 
+    text-align: center; 
 }
 
 #section3 p {
@@ -293,6 +287,7 @@ ol.how-to {
     list-style-type: decimal;
     padding-left: 50px;
     padding-right: 50px;
+    
 }
 
 
