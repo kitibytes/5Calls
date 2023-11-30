@@ -15,6 +15,16 @@ nav{
 }
 .introinfo{
   display:flex;
+  padding:2em;
+}
+
+.introinfo img {
+  margin-right: 5em;
+  margin-top: 3em;
+}
+
+.introtext {
+  font-size: 1.5em
 }
 
 #donate{
@@ -23,6 +33,45 @@ nav{
   background-color: #F9FCFB;
   text-decoration: none;
 }
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif; 
+  font-size: 2.5rem; 
+  letter-spacing: 0.2rem
+}
+
+h2 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.banner {
+  background-color: #0037AE;
+     background-size: cover; 
+     background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    color:#F9FCFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1{
+  font-size: 3em;
+}
+
+.banner p{
+  font-size: 2em;
+}
+
 i{
   color:#F9FCFB;
 }
@@ -32,6 +81,7 @@ i{
 .meettheteam{
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 
 }
 
@@ -50,6 +100,7 @@ i{
     box-shadow: 1px 5px 15px #1e0e3e;
     position: relative;
     overflow: hidden;
+  
 
     &:nth-of-type(1) {
       background: url("https://5calls.org/images/vols/rati.png")
