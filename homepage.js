@@ -22,25 +22,39 @@ document.addEventListener("DOMContentLoaded", function() {
   navLinks.forEach(function(link) {
     // Add a click event listener to each link
     link.addEventListener('click', function(e) {
-      // Extract the target section from the href attribute of the link
-      var targetId = link.getAttribute('href');
-      var targetSection = document.querySelector(targetId);
-
-      // Check if the target section exists and is not #section1
-      if (targetSection && targetId !== "#section1") {
-        // Prevent the default anchor click behavior
-        e.preventDefault();
-
-        // Compute the offset position (the top of the target section minus the navbar height)
-        var navbarHeight = document.querySelector('.navigation').offsetHeight;
-        var offsetTop = targetSection.offsetTop - navbarHeight;
-
-        // Smooth scroll to the target section
-        window.scroll({
-          top: offsetTop,
-          behavior: "smooth"
-        });
-      }
+      scrollHandler(e, link);
     });
   });
-}); // Corrected closing for the event listener
+
+  // Select the "Get Started" button
+  var getStartedButton = document.getElementById('get-started');
+
+  // Add click event listener to the "Get Started" button
+  if (getStartedButton) {
+    getStartedButton.addEventListener('click', function(e) {
+      scrollHandler(e, getStartedButton);
+    });
+  }
+});
+
+function scrollHandler(e, element) {
+  // Extract the target section from the href attribute of the link
+  var targetId = element.getAttribute('href');
+  var targetSection = document.querySelector(targetId);
+
+  // Check if the target section exists
+  if (targetSection) {
+    // Prevent the default anchor click behavior
+    e.preventDefault();
+
+    // Compute the offset position (the top of the target section minus the navbar height)
+    var navbarHeight = document.querySelector('.navigation').offsetHeight;
+    var offsetTop = targetSection.offsetTop - navbarHeight;
+
+    // Smooth scroll to the target section
+    window.scroll({
+      top: offsetTop,
+      behavior: "smooth"
+    });
+  }
+}
