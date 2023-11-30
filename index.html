@@ -4,346 +4,191 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="homepage.css">
-        <!-- font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/6351158a28.js" crossorigin="anonymous"></script>
         <title>Homepage</title>
     </head>
-    <body>
+
+    <nav class="navigation"> 
+        <ul class="logo">
+            <li><img src="https://5calls.org/img/5calls-logotype.png" alt="temp"></li>
+        </ul>
         
-        <nav>
-
-            <ul class="navbar" id="navbar">
-                <li class="nav-item">
-                    <a href="#" class="nav-link" rel="noopener noreferrer" target="_blank">Home</a>
-         
-                    </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" rel="noopener noreferrer" target="_blank">Who We Are</a>
-          
+        <ul class="navbar" id="navbar">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link" rel="noopener noreferrer">Home</a>
                 </li>
-                <li class="nav-item"> 
-                    <a href="#" class="nav-link" rel="noopener noreferrer" target="_blank">Issues</a>
-                    <i class="fa-solid fa-angle-down caret-down"></i>
-                    
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" rel="noopener noreferrer" target="_blank">Contact</a>
-                  
-                </li>
-                <li class="nav-item">
-                    <a href="#donate" class="donate-button" rel="noopener noreferrer">Donate</a>
-                </li>
-            </ul>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link" rel="noopener noreferrer" target="_blank">Who We Are</a>
+            </li>
+            <li class="nav-item">
+                <a href=#section2 class="nav-link" rel="noopener noreferrer">Issues</a>
+                <i id="carat" class="fa-solid fa-angle-down caret-down"></i>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link" rel="noopener noreferrer" target="_blank">Contact</a>
+            </li>
+            <li class="nav-donate">
+                <a href=#section10 class="donate-button" rel="noopener noreferrer">Donate</a>
+            </li>
+        </ul>
+    </nav>
 
-
-        </nav>
-
+    <body>
+    
+    
         <section id="section1">
-
-<header>
-
-<h2 class="smalltagline">3 million calls made, 3 million calls heard.</h2>
-<h1 class="bigtagline"><strong>YOUR VOICE MATTERS</strong></h1>
-<p>5 Calls researches issues, writes scripts that clearly articulate a progressive position, figures out the most influential decision-makers, and collects phone numbers for their offices.
+            <header>
+                <h2 class="smalltagline"><i>3 million calls made, 3 million calls heard.</i></h2>
+                <h1 class="bigtagline"><strong>YOUR VOICE MATTERS</strong></h1>
+                <p>5 Calls researches issues, writes scripts that clearly articulate a progressive position, figures out the most influential decision-makers, and collects phone numbers for their offices.
     All it takes is a call!</p>
-</header>
+            </header>
+            
+            <div class="homepage-buttons">
+                <a href=#section3 class="button" id="get-started"><strong>GET STARTED</strong></a>
+                <a href=#section6 class="button" id="learn-more"><strong>LEARN MORE</strong></a>
+            </div>
 
-<div class="homepage-buttons">
-            <a href=#section3 class="button" id="get-started"><strong>GET STARTED</strong></a>
-            <a href=#section6 class="button"><strong>LEARN MORE</strong></a>
-</div>
         </section>
-
-
 
 
         <section id="section2">
-<h1><strong>Choose an issue important to you</strong></h1>
+            <h2><strong>Choose an issue important to you or enter your address to find your representatives </strong></h2>
+            <div class="search-section">
+                <form action="/search-location" method="get">
+                    <button type="submit" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" name="search" placeholder="Enter your address or zipcode" aria-label="Search by address or zipcode">
+                </form>
+            </div>
 
-<div class="search-section">
+            <div class="bill-container">
+                <ul class="bills" id="bills">
+                    <li><a href="https://5calls.org/issue/israel-palestine-gaza-war-hamas-ceasefire/" rel="noopener noreferrer">
+                        Call for De-escalation and Ceasefire in Israel and Occupied Palestine</a></li>
+                    <li><a href="https://5calls.org/issue/amtrak-transportation-climate-change/" rel="noopener noreferrer">
+                        Reject Cuts to Amtrak to Support Green Transportation</a></li>
+                    <li><a href="https://5calls.org/issue/assault-weapon-ban-gun-safety/" rel="noopener noreferrer">
+                        Demand a Federal Ban on Assault Weapons</a></li>
+                    <li><a href="https://5calls.org/issue/reject-kosa-kids-online-safety-act/" rel="noopener noreferrer">
+                        Reject the Kids Online Safety Act (KOSA)</a></li>
+                        <li><a href="https://5calls.org/issue/gun-safety-reform/" rel="noopener noreferrer">
+                            Demand Action Against Gun Violence</a></li>
+                    <li><a href="https://5calls.org/issue/abortion-s701-health-protection-act/" rel="noopener noreferrer">
+                        Codify Abortion Rights</a></li>
+                    <li><a href="https://5calls.org/issue/restrict-act-tiktok-ban/" rel="noopener noreferrer">
+                        Oppose the RESTRICT Act</a></li>
+                    <li><a href="https://5calls.org/issue/transgender-state-legislation/" rel="noopener noreferrer">
+                        Oppose Anti-Transgender Legislation In Your State</a></li>
+                    <li><a href="https://5calls.org/issue/protecting-right-organize-pro-act/" rel="noopener noreferrer">
+                        Support Workers Right to Organize: Support the PRO Act</a></li>
+                </ul>
 
-<form action="/search-location" method="get">
-    <input type="text" name="search" placeholder="Enter your address or zipcode" aria-label="Search by address or zipcode">
+                <a href="https://5calls.org/all/" class="button" id="see-all-button">See All</a>
+            </div>
 
-    <button type="submit" aria-label="Search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
-
-</form>
-</div>
-
-<div class="bill-container">
-    <ul class="bills" id="bills">
-<li>
-    <a href="https://5calls.org/issue/israel-palestine-gaza-war-hamas-ceasefire/" rel="noopener noreferrer">Call for De-escalation and Ceasefire in Israel and Occupied Palestine</a>
-</li>
-
-<li>
-    <a href="https://5calls.org/issue/amtrak-transportation-climate-change/" rel="noopener noreferrer">Reject Cuts to Amtrak to Support Green Transportation</a>
-</li>
-
-<li>
-    <a href="https://5calls.org/issue/assault-weapon-ban-gun-safety/" rel="noopener noreferrer">Demand a Federal Ban on Assault Weapons</a>
-  </li>
-
-  <li>
-    <a href="https://5calls.org/issue/reject-kosa-kids-online-safety-act/" rel="noopener noreferrer">Reject the Kids Online Safety Act (KOSA)</a>
-  </li>
-
-  <li>
-    <a href="https://5calls.org/issue/gun-safety-reform/" rel="noopener noreferrer">Demand Action Against Gun Violence</a>
-  </li>
-
-  <li>
-    <a href="https://5calls.org/issue/abortion-s701-health-protection-act/" rel="noopener noreferrer">Codify Abortion Rights</a>
-  </li>
-
-  <li>
-    <a href="https://5calls.org/issue/restrict-act-tiktok-ban/" rel="noopener noreferrer">Oppose the RESTRICT Act</a>
-  </li>
-
-  <li>
-    <a href="https://5calls.org/issue/transgender-state-legislation/" rel="noopener noreferrer">Oppose Anti-Transgender Legislation In Your State</a>
-  </li>
-
-  <li>
-    <a href="https://5calls.org/issue/protecting-right-organize-pro-act/" rel="noopener noreferrer">Support Workers Right to Organize: Support the PRO Act</a>
-  </li>
-    </ul>
-
-    <a href="link-to-all-items" class="button" id="see-all-button">See All</a>
-
-</div>
         </section>
+
+
 
         <section id="section3">
-<header>
-    <h1 class="headers"><strong>How to Get Started</strong></h1>
-</header>
-
-<ol class="how-to">
-<li><strong>Choose an issue you care about</strong>
-<p>Make calls in support of progressive issues. We update the list regularly as legislation develops and remove topics as soon as they're no longer relevant. If you don’t see your issue on the list, please reach out at hello@5calls.org.</p>
-</li>
-
-<li><strong>Enter your location</strong>
-<p>Next, we'll figure out who you need to call. We can find your location for you, or you can enter a zip code or address manually. If your ZIP code is in more than one Congressional district we may show our best guess for your representative. Use an address or cross streets to more accurately locate you.</p>
-</li>
-
-<li id="privacy-notice">
-    <p><em>Your location stays private. We don’t store it and we never sell data to third parties.</em></p>
-  </li>
-
-<li><strong>Make your calls</strong>
-    <p>We’ll provide you with a script and tell you who to call for your chosen issue, from Representatives and Senators to Governors and Attorneys General. Once you mark the result of your call, we’ll show you the next person’s number.</p>
-    </li>
-</ol>
-
-<div class="sign-up"></div>
-<h4><em>Sign Up For More</em></h4>
-<p>Follow us on Twitter, Instagram, and Facebook to learn about new issues. Or subscribe to our weekly newsletter for emails with the latest updates.</p>
+                <h2 class="headers"><strong>How to Get Started</strong></h2>
+            <ol class="how-to">
+                <li><strong>Choose an issue you care about</strong>
+                    <p>Make calls in support of progressive issues. We update the list regularly as legislation develops and remove topics as soon as they're no longer relevant. If you don’t see your issue on the list, please reach out at <strong>hello@5calls.org</strong>.</p>
+                </li>
+                <li><strong>Enter your location</strong>
+                    <p>Next, we'll figure out who you need to call. We can find your location for you, or you can enter a zip code or address manually. If your ZIP code is in more than one Congressional district we may show our best guess for your representative. Use an address or cross streets to more accurately locate you.</p>
+                    <p id="privacy-notice"><em>Your location stays private. We don’t store it and we never sell data to third parties.</em></p>
+                </li>
+                <li><strong>Make your calls</strong>
+                    <p>We’ll provide you with a script and tell you who to call for your chosen issue, from Representatives and Senators to Governors and Attorneys General. Once you mark the result of your call, we’ll show you the next person’s number.</p>
+                </li>
+            </ol>
+            
+            <div id="sign-up">
+            <h3><em>Sign Up For More</em></h3>
+            <p>Follow us on Twitter, Instagram, and Facebook to learn about new issues. Or subscribe to our weekly newsletter for emails with the latest updates.</p>
+        </div>
         </section>
 
-
-
-        <section id="section4"></section>
-
+        
+        <section id="section4">
+            <h2 class="headers"><strong>Tips For Calling</strong></h2>
+            <ul>
+                <li>
+                    <p><strong>Keep it short.</strong></p>
+                    <p>Calls can take less than a minute.</p>
+                </li>
+                <li>
+                    <p><strong>Stick to the script, or improvise.</strong></p>
+                    <p>We've worked on our scripts to keep your calls easy, but you can add your personal story for extra impact.</p>
+                </li>
+                <li>
+                    <p><strong>Make your stance clear</strong></p>
+                    <p>Use supporting bill numbers if applicable so the staffer can easily tally your call.</p>
+                </li>
+                <li>
+                    <p><strong>Be respectful.</strong></p>
+                    <p>No matter which party they work for, the staffers that pick up the phone aren’t looking to challenge you.</p>
+                </li>
+            </ul>
+    
+        </section>
 
 
         <section id="section5">
-<h1>GET UPDATES ON THE LATEST ISSUES</h1>
-<h3>Subscribe to our newsletter. Once a week, no spam.</h3>
-
-<div class="updates-search"
-<form action="your-server-side-script" method="POST">
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    <button type="submit">SIGN UP</button>
-  </form>
-</div>
-
+    <h2>Get Updates On The Latest Issues</h2>
+    <h3>Subscribe to our newsletter. Once a week, no spam.</h3>
+    <div class="updates-search">
+    <form action="your-server-side-script" method="POST">
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    <button id="news-submit" type="submit">SIGN UP</button>
+    </form>
+    </div>
         </section>
-
-
         <section id="section6">
             <h2>Why Calling Works</h2>
 
             <h3>Calling your congressperson is the most effective way to influence policy.</h3>
-            <p>Once your congressperson forms a public stance 
-            on an issue, it's hard for them to walk it back. 
-            The earlier they hear your opinion, the more likely 
-            it is you'll make an impact. Calling is by far 
-            the most effective way to ensure that your 
-            representative hears you before they take a public stance.</p>
+            <p>Once your congressperson forms a public stance on an issue, it’s hard for them to walk it back. The earlier they hear your opinion, the more likely it is you’ll make an impact. Calling is by far the most effective way to ensure that your representative hears you before they take a public stance.</p>
 
         <div>
             <h3>No matter their politics, calling works.</h3>
             <ul class="noMatterList">
                 <li>
-                    <p><strong>If you support their stance…</strong>
-                    You need to let your congressperson know! When they 
-                    talk to colleagues, they use call tallies and personal 
-                    stories from constituents to better support their positions.</p>
+                    <h3><strong>If you support their stance…</strong></h3>
+                    <br>
+                    <p>You need to let your congressperson know! When they talk to colleagues, they use call tallies and personal stories from constituents to better support their positions.</p>
                 </li>
                 <li>
-                    <p><strong>If you oppose or don't know their stance…</strong>
-                    Calling is the easiest way to sway them! Your 
-                    congressperson gets regular call tally reports, letting 
-                    them know how strongly their constituents feel about an 
-                    issue.</p>
+                    <h3><strong>If you oppose or don’t know their stance…</strong></h3>
+                    <br>
+                    <p>Calling is the easiest way to sway them! Your congressperson gets regular call tally reports, letting them know how strongly their constituents feel about an issue.</p>
                 </li>
             </ul>
         </div>
             <h2>Reviews Of 5 Calls</h2>
             <ul class="reviewsList">
                 <li>
-                    <p><strong>VOGUE</strong><br>"So what's a girl who suffers from stage 
-                    fright and maybe isn't totally comfortable expressing her concerns 
-                    about the issues she feels could be threatening our democracy to do? 
-                    Go to 5calls.org.
-                    </p>
+                    <p>
+                        <img id="vogue-logo" src="vogue logo transparent.png" alt="vogue magazine logo">
+                    </p><p>"So what’s a girl who suffers from stage fright and maybe isn’t totally comfortable expressing her concerns about the issues she feels could be threatening our democracy to do? Go to 5calls.org.</p>
                 </li>
                 <li>
-                    <p><strong>HUFFPOST</strong><br>"While many voters like to email or 
-                    leave Facebook messages for their representatives, there's evidence 
-                    that phone calls are the best way to influence lawmakers."</p>
+                    <p>
+                        <img id="huffpost-logo" src="huffingtonpost-logo-transparent.png">
+                    </p><p>"While many voters like to email or leave Facebook messages for their representatives, there’s evidence that phone calls are the best way to influence lawmakers."</p>
                 </li>
                 <li>
-                    <p><strong>badcredit.org</strong><br>"5 Calls gives visitors 
-                    educational resources and scripts they can read over the phone 
-                    to concisely convey their thoughts."</p>
+                    <p><strong>badcredit.org</strong></p><p>"5 Calls gives visitors educational resources and scripts they can read over the phone to concisely convey their thoughts."</p>
                 </li>
             </ul> 
 
         </section>
         
-        <section id="section7">
-            <h2>FAQ</h2>
-
-            <ul>
-                <li>
-                    <p><strong>Why can't I send a letter or email instead?</strong></p>
-                    <p>Calling is by far the most effective way 
-                    to reach your congressperson. To learn more, 
-                    check out our guide to why calling works.</p>
-                </li>
-                <li>
-                    <p><strong>Why do I only see my House or Senate representative?</strong></p>
-                    <p>Depending on the issue, voting may have 
-                    already happened in one chamber or the other, 
-                    or the issue may not be active in that chamber. 
-                    We regularly update who needs to be called based on 
-                    legislation status so you can receive the right information.</p>
-                </li>
-                <li>
-                    <p><strong>Can I save time by mentioning multiple issues in the same call?</strong></p>
-                    <p>Sometimes! This largely depends on the office 
-                    and how they tally calls, but you can always ask. 
-                    For cases where they can't tally multiple issues, 
-                    you can call right back or spread your calls out 
-                    over the day.</p>
-                </li>
-                <li>
-                    <p><strong>What if I really don't like talking on the phone?</strong></p>
-                    <p>Calling on evenings and weekends with the intent of 
-                    leaving a voicemail is still a great way to make your 
-                    voice heard. Congressional offices are usually open during 
-                    normal business hours in their local time zone.</p>
-                </li>
-            </ul>
-
-        </section>
         
-        <section id="section8">
-            <h2>Who To Call First</h2>
-
-            <div id="who-to-call-paragraphs">
-                <p>Start with their D.C. office. When you open an issue 
-                page, we start with your congressperson's Washington, D.C. 
-                office. You should call that one before trying a local office.</p> 
-
-                <p>If no one picks up, leave a voicemail. Congressional 
-                offices check voicemail every day. They will tally your 
-                message just like a call. Make sure to mention your street 
-                address in the message. That way, your congressperson 
-                will know you are a constituent.</p>  
-
-                <p>After-hours voicemails are a great way to make your 
-                voice heard if you aren't comfortable talking to someone 
-                directly.</p>
-
-                <p>If you can't get through, call their local offices. 
-                Your senators will have a few local offices. Since 
-                they represent your entire state, it doesn't matter 
-                which one you call, even if it's far away from you.</p>  
-
-                <p>If you can't get through, we know it's frustrating. 
-                Congressional offices have recently been seeing record 
-                call volume.</p>
-
-                <p>If you can't reach your congressperson, that usually 
-                means a lot of people cared enough to call. That's 
-                amazing! Don't sweat it and try again later.</p>
-            </div>
-
-            <button onclick="toggleReadMore()"><strong>Read More</strong></button>
-        </section>
-        
-        <section id="section9">
-            <h2>Ready to Get Started?</h2>
-
-            <button type="button" aria-label="Choose an Issue" role="button"><strong>Choose an Issue</strong></button>
-        </section>
-        
-        <section id="section10">
-            <h1>DONATE TO 5 CALLS</h1>
-
-            <div class="grid-container" role="group" aria-label="Paragraphs and Button">
-
-                <p role="paragraph">5 Calls has powered millions of your calls 
-                to your elected representatives. Our policy write-ups help 
-                individuals around the country focus their efforts on what's 
-                actually happening in government. We need your help to 
-                continue providing these resources and developing new tools 
-                for connecting you with your representatives.
-                <br><br>
-                We want to continue helping you make your voice heard, 
-                and we can only do that <strong>with your support.</strong></p>
-                
-                <p role="paragraph">Contributions or gifts to 5 Calls Civic 
-                Action are not tax deductible as charitable contributions 
-                or as business expenses under IRC Section 162(e).</p>
-            
-                <button type="button" role="button">DONATE TODAY</button>
-            </div>
-
-        </section>
-
-    </body>
-
-    <footer>
-
-        <h2 class="visually-hidden">Footer Navigation</h2>
-
-        <ul class="social-list" id="socialList" aria-labelledby="socialList">
-            <li><a href="https://twitter.com/make5calls" class="social-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/5calls/" class="social-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.facebook.com/make5calls" class="social-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://github.com/5calls/5calls" class="social-button" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-        </ul>
-
-        <ul class="list2" id="list2" aria-labelledby="list2">
-            <li role="listitem"><a href="#" role="link" aria-label="help">Help</a></li>
-            <li role="listitem"><a href="#" role="link" aria-label="contact">Contact</a></li>
-            <li role="listitem"><a href="#" role="link" aria-label="feedback">Feedback</a></li>
-        </ul>
-
-        <ul class="list3" id="list3" aria-labelledby="list3">
-            <li role="listitem"><a href="https://5calls.org/privacy/" role="link" aria-label="privacy">Privacy</a></li>
-            <li role="listitem"><a href="#" role="link" aria-label="accessibility">Accessibility</a></li>
-            <li role="listitem"><a href="https://5calls.org/troubleshooting/" role="link" aria-label="troubleshooting">Troubleshooting</a></li>
-        </ul>         
-    
-    </footer>
-
-</html>
