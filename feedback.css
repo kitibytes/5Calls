@@ -17,13 +17,27 @@ h3 {
 p {
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 400;
+  /* color: black; */
 }
+
 /* form */
 form{
-    text-align:center; 
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-bottom: 20px;
-    color: #F9FCFB;
-    font-family: 'Source Sans 3',
+    font-family: 'Source Sans 3';
+
+}
+.sub {
+width: 100%;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 
 /* footer */
 footer {
