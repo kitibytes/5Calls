@@ -17,23 +17,27 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navigation"> 
+            <ul class="logo">
+                <li><img src="https://5calls.org/img/5calls-logotype.png" alt="temp"></li>
+            </ul>
+            
             <ul class="navbar" id="navbar">
                 <li class="nav-item">
-                    <a href="#" class="nav-link" rel="noopener noreferrer" target="_blank">Home</a>
+                    <a href="index.html" class="nav-link" rel="noopener noreferrer" target="_blank">Home</a>
+                    </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" rel="noopener noreferrer" target="_blank">Who We Are</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" rel="noopener noreferrer" target="_blank">Who We Are</a>
+                    <a href=index.html#section2 class="nav-link" rel="noopener noreferrer" target="_blank">Issues</a>
+                    <i id="carat" class="fa-solid fa-angle-down caret-down"></i>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" rel="noopener noreferrer" target="_blank">Issues</a>
-                    <i class="fa-solid fa-angle-down caret-down"></i>
+                    <a href="contact.html" class="nav-link" rel="noopener noreferrer" target="_blank">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" rel="noopener noreferrer" target="_blank">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#donate" class="donate-button" rel="noopener noreferrer">Donate</a>
+                <li class="nav-donate">
+                    <a href=index.html#section10 class="donate-button" rel="noopener noreferrer" target="_blank">Donate</a>
                 </li>
             </ul>
         </nav>
@@ -45,6 +49,7 @@
  <p>
     <button id="lightswitch">🪔</button>
  </p>
+ <div class="banner">
     <h2>We Want to Hear From You!</h2>
     <p>
         Dear Advocates,
@@ -52,9 +57,9 @@
         Your voice matters, and we want to hear about the causes that matter most to you. If there's a cause not
         represented on our platform, now's your chance to change that. <br><br>
         Please refer to our FAQ and Common Questions Picture Guide for a walk through of our site. If you still cant
-        find what youre looking for, email us at: hello@5calls.org or fill out the form below!
+        find what you're looking for, email us at: hello@5calls.org or fill out the form below!
     </p>
-
+</div>
 
     <!--FLOATING/SCROLLING BUTTON W/ DROP DOWN MENU?-->
 
@@ -77,7 +82,7 @@
                     <label>E-mail: <br> <input name="email" type="email" /></label>
                 </p>
                 <p>
-                    <label>Phone(Optional): <br> <input name="phonenumber" /></label>
+                    <label>Phone(Optional): <br> <input name="phone number" /></label>
                 </p>
                 <p>
                     <!--radio buttons??-->
@@ -87,7 +92,7 @@
                             <option>--None--</option>
                             <option>Issue Suggestion</option>
                             <option>Feedback</option>
-                            <option>IT Supoort</option>
+                            <option>IT Support</option>
                         </select>
                     </label>
                 </p>
@@ -113,7 +118,7 @@
     <!--Accessibility placeholder (radial dial etc.) BOTTOM LEFT-->
 
 
-    <button id="access" type="???" accessibility placeholder>accessibility button</button>
+    <button id="access" type="button" accessibility placeholder>accessibility button holder</button>
 
     <footer>
 

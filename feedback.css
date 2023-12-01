@@ -1,7 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .logo img {
+    width: 150px;
+    height: auto;
+} */
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+}
+header{
+    margin-top: 60px; /* supposed to help with the navbar scrolling */
+}
+
+.navigation {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    margin: 0 auto;
+    background-color: #002d8f;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    /*
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.navigation li {
+    font-family: 'Montserrat';
+    margin-right: 20px;
+    color: #F9FCFB;
+}
+
+.nav-link {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #F9FCFB;
+    text-decoration: none;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #C84845;
+}
+
+.donate-button {
+    color: #0037AE;
+    background-color: #F9FCFB;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
 /* There is nothing here... */
 h1 {
-    font-family: 'Bebas Neue', sans-serif; 
-    font-size: 2.5rem; 
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
     letter-spacing: 0.2rem
 }
 
@@ -14,14 +86,44 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 400;
-  /* color: black; */
+.button {
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* form */
-form{
+.logo img {
+    width: auto;
+    height: 4em;
+    display: inline-block;
+    max-height: 100%;
+}
+
+.logo, .navbar {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    /* color: black; */
+}
+
+.banner {
+    background-color: #0037AE;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    color: #F9FCFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* form 
+form {
     text-align: center;
     padding-top: 20px;
     padding-left: 60px;
@@ -30,22 +132,71 @@ form{
     font-family: 'Source Sans 3';
 
 }
+
 .sub {
-width: 100%;
-text-align: center;
-display: flex;
-align-items: center;
-justify-content: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+.sub {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: both;
+    /* Allow users to resize the textarea */
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #217dbb;
 }
 
 
-/* footer */
+ /* -------------footer----------------*/
+
 footer {
     margin: 0;
     padding: 0;
 
 }
-footer ul  {
+
+footer ul {
     list-style-type: none;
     Display: flex;
     Flex-direction: row;
@@ -56,3 +207,81 @@ footer ul  {
     justify-content: space-between;
 }
 
+#social-list li {
+    margin-right: 10;
+    font-size: 1.6rem;
+}
+
+#social-list li a:active i {
+    filter: brightness(0%);
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.07em
+}
+
+footer ul  {
+    list-style-type: none;
+    Display: flex;
+    Flex-direction: row;
+    padding: 10;
+}
+
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+#left-list li {
+    margin-right: 10; 
+}
+
+#list3 li {
+    margin-right: 10; 
+}
+
+#social-list li {
+    margin-right: 10;
+    font-size: 1.6rem; 
+}
+
+#social-list li a:active i {
+    filter: brightness(0%); 
+}
+
+/* #social-list li:nth-child(1) a i{
+    color: rgb(29, 161, 242); /* Twitter * /
+}
+
+#social-list li:nth-child(2) a i {
+    color: rgb(234, 54, 97); /* Instagram * /
+}
+
+#social-list li:nth-child(3) a i {
+    color: rgb(44, 101, 245); /* Facebook * /
+}
+
+#social-list li:nth-child(4) a i {
+    color: rgb(140, 41, 255); /* GitHub * /
+}
+*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+@media screen and (min-width: 715px) {
+    
+    .social-and-left-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
