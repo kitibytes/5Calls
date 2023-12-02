@@ -2,6 +2,13 @@
 
     #message{
         height: 60px;
+        width: 300px;
+    }
+    #name{
+        width: 300px;
+    }
+    #email{
+        width: 300px;
     }
 
     h1{
@@ -140,8 +147,8 @@
 
     } 
     footer {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
 
     }
 
@@ -166,8 +173,8 @@
     }
 
     footer {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
         font-family: 'Source Sans 3', sans-serif;
         font-size: 0.8rem;
         letter-spacing: 0.07em
@@ -177,7 +184,7 @@
         list-style-type: none;
         Display: flex;
         Flex-direction: row;
-        padding: 10;
+        padding:10px;
     }
 
     footer li a {
@@ -186,15 +193,18 @@
     }
 
     #left-list li {
-        margin-right: 10; 
+        margin-right: 10px; 
     }
 
     #list3 li {
-        margin-right: 10; 
+        margin-right: 10px; 
+    }
+    #list2 li {
+        margin-right: 10px; 
     }
 
     #social-list li {
-        margin-right: 10;
+        margin-right: 10px;
         font-size: 1.6rem; 
     }
 
@@ -225,6 +235,10 @@
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
     }
+    .social-and-left-list {
+        display: flex;
+        justify-content: space-between;
+    }
     #submit{
         border-radius: 6px;
     }
@@ -234,7 +248,15 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) { /* Styles for screens with a width between 768px and 1023px (typical tablets) */ 
     #message{
         height: 60px;
+        width: 300px;
     }
+    #name{
+        width: 300px;
+    }
+    #email{
+        width: 300px;
+    }
+
     
     h1{
         font-family: 'Bebas Neue', sans-serif;
@@ -380,8 +402,8 @@
     
     } 
     footer {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
     
     }
     
@@ -397,7 +419,7 @@
     }
     
     #social-list li {
-        margin-right: 10;
+        margin-right: 10px;
         font-size: 1.6rem;
     }
     
@@ -417,7 +439,7 @@
         list-style-type: none;
         Display: flex;
         Flex-direction: row;
-        padding: 10;
+        padding: 10px;
     }
     
     footer li a {
@@ -426,15 +448,18 @@
     }
     
     #left-list li {
-        margin-right: 10; 
+        margin-right: 10px; 
     }
     
     #list3 li {
-        margin-right: 10; 
+        margin-right: 10px; 
+    }
+    #list2 li {
+        margin-right: 10px; 
     }
     
     #social-list li {
-        margin-right: 10;
+        margin-right: 10px;
         font-size: 1.6rem; 
     }
     
@@ -465,6 +490,10 @@
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
     }
+    .social-and-left-list {
+        display: flex;
+        justify-content: space-between;
+    }
     #submit{
         border-radius: 6px;
     }
@@ -474,7 +503,15 @@
 @media screen and (min-width: 1024px) { /* Styles for screens with a minimum width of 1024px (typical desktops and laptops) */ 
     #message{
         height: 60px;
+        width: 300px;
     }
+    #name{
+        width: 300px;
+    }
+    #email{
+        width: 300px;
+    }
+
     
     h1{
         font-family: 'Bebas Neue', sans-serif;
@@ -600,8 +637,8 @@
     }
 
     body{
-        margin:0;
-        padding:0;
+        margin:0px;
+        padding:0px;
     }
 
     .flex-container {
@@ -620,8 +657,8 @@
     
     } 
     footer {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
     
     }
     
@@ -637,7 +674,7 @@
     }
     
     #social-list li {
-        margin-right: 10;
+        margin-right: 10px;
         font-size: 1.6rem;
     }
     
@@ -646,8 +683,8 @@
     }
     
     footer {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
         font-family: 'Source Sans 3', sans-serif;
         font-size: 0.8rem;
         letter-spacing: 0.07em
@@ -657,7 +694,7 @@
         list-style-type: none;
         Display: flex;
         Flex-direction: row;
-        padding: 10;
+        padding: 10px;
     }
     
     footer li a {
@@ -666,15 +703,18 @@
     }
     
     #left-list li {
-        margin-right: 10; 
+        margin-right: 10px; 
     }
     
     #list3 li {
-        margin-right: 10; 
+        margin-right: 10px; 
+    }
+    #list2 li {
+        margin-right: 10px; 
     }
     
     #social-list li {
-        margin-right: 10;
+        margin-right: 10px;
         font-size: 1.6rem; 
     }
     
@@ -704,6 +744,10 @@
         height: 1px;
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
+    }
+    .social-and-left-list {
+        display: flex;
+        justify-content: space-between;
     }
     #submit{
         border-radius: 6px;
