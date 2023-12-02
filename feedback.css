@@ -1,73 +1,103 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 60px);
+}
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* .logo img {
-    width: 150px;
-    height: auto;
-} */
-
-@media (max-width: 768px) {
-    .logo img {
-        width: 120px;
-        height: auto;
-    }
+.headers {
+    background-color: #173583;
+    padding: 20px 0;
+    width: 100%;
+    color: #F9FCFB;
 }
-header{
-    margin-top: 60px; /* supposed to help with the navbar scrolling */
+
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem
+}
+
+h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo img {
+    width: auto;
+    height: 4em;
+    display: inline-block;
+    max-height: 100%;
+}
+
+.logo, .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    font-family: 'Montserrat';
+    margin-right: 20px;
+    color: #F9FCFB;
+
 }
 
 .navigation {
-    top: 0;
-    left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     padding: 7px;
     margin: 0 auto;
-    background-color: #002d8f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0037AE;
     position: fixed;
-    z-index: 1000;
+    z-index: 10;
+    text-transform: uppercase;
 
 }
 
 .navigation ul {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    /*
-    align-items: center;
-    justify-content: space-between; */
+    Flex-direction: row;
 }
 
-.navigation li {
-    font-family: 'Montserrat';
-    margin-right: 20px;
+.navbar li a {
     color: #F9FCFB;
+    font-weight: bold;
 }
 
-.nav-link {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #F9FCFB;
+.navbar li a, .button {
     text-decoration: none;
-    font-size: 2.5rem;
-    letter-spacing: 0.2rem;
-    margin-right: 20px;
-    text-transform: uppercase;
 }
 
-.nav-link:hover {
+.navbar li a:hover, .navbar li a:active {
     color: #C84845;
 }
 
-.donate-button {
+#carat:hover, #carat:active {
+    color: #C84845;
+}
+
+
+.nav-donate .donate-button {
     color: #0037AE;
     background-color: #F9FCFB;
     padding: 8px 14px;
     border-radius: 6px;
-    text-decoration: none;
 }
 
 /* There is nothing here... */
@@ -147,6 +177,9 @@ form {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background-color: #0037AE;
+    margin: 55px;
+    color: #F9FCFB
 }
 
 form {
