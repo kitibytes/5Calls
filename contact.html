@@ -1,98 +1,418 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="contact.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6351158a28.js" crossorigin="anonymous"></script>
-    <script defer src="contact.js" ></script>
-    <title>contact page</title>
-</head>
-<body>
+@media screen and (max-width: 767px) { /* Styles for screens with a maximum width of 767px (typical mobile phones) */ 
 
-    <nav>
-        <b>
-        <a href="homepage.html">Home</a> 
-        
-        <a href="about.html">Who We Are</a> 
-        <a href="/Feedback/feedback.html">Issues</a> 
-        <a id="donate" href="#">Donate</a>
-        </b>
+#message{
+    height: 60px;
+}
 
-    </nav>
-    <div class="logo">
-    <img src="logo.png" alt="Logo" id="logo">
-    </div>
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    SIZE: 2.5REM;
+    padding-top: 10px;
+    text-align:center;
+    color: #F9FCFB;
+}
+i{
+    color:#F9FCFB;
+}
+#donate{
+    padding:5px;
+    color: black;
+    background-color: #F9FCFB;
+    text-decoration:none;
+}
+h2{
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+}
+p{
+    text-align:center;
+    color: #F9FCFB;
+    font-family: 'Source Sans 3', sans-serif;
 
-    <div id="popout">
-    <h1>
-        CONTACT US
-    </h1>
-    <p class="intro">
-        We want to hear from you! Reach out to us using the form below, or email us at hello@5calls.org
-    </p>
+}
+nav{
+
+    text-align:end;
+    background-color: #1875D1;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
     
-    <form id="form" method="GET">
+    
+}
+form{
+    text-align:center; 
+    padding-bottom: 20px;
+    color: #F9FCFB;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+#issue{
+    
+    margin-right: 55px;
+}
+#other{
+    margin-right: 107px;
+}
+#popout{
+    background-color: #0037AE;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+.intro{
+    margin-left:50px;
+    margin-right: 50px;
+    
+}
+
+#logo{
+    padding-top:20px;
+    height:150px;
+    
+}
+.logo{
+    text-align: center;
+}
+body{
+    margin:0;
+    padding:0;
+}
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: #F9FCFB;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #F9FCFB;
+  }
+  .flex-container {
+    display: flex;
+    gap: 10px;
+    
+    
+}
+
+.flex-child {
+    flex-basis: 100%;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+
+} 
+footer {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.07em
+}
+
+footer ul  {
+    list-style-type: none;
+    Display: flex;
+    Flex-direction: row;
+    padding: 10;
+}
+
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+#list3 li {
+    margin-right: 10; 
+}
+
+#social-list li {
+    margin-right: 10; /* Adds spacing between list items */
+    font-size: 1.6rem; 
+}
+
+#social-list li a:active i {
+    filter: brightness(0%); 
+}
+
+#social-list li:nth-child(1) a i{
+    color: rgb(29, 161, 242); /* Twitter */
+}
+
+#social-list li:nth-child(2) a i {
+    color: rgb(234, 54, 97); /* Instagram */
+}
+
+#social-list li:nth-child(3) a i {
+    color: rgb(44, 101, 245); /* Facebook */
+}
+
+#social-list li:nth-child(4) a i {
+    color: rgb(140, 41, 255); /* GitHub */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+#submit{
+    border-radius: 5px;
+}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { /* Styles for screens with a width between 768px and 1023px (typical tablets) */ 
+    #message{
+        height: 60px;
+    }
+    
+    h1{
+        font-family: 'Bebas Neue', sans-serif;
+        SIZE: 2.5REM;
+        padding-top: 10px;
+        text-align:center;
+        color: #F9FCFB;
+    }
+    i{
+        color:#F9FCFB;
+    }
+    #donate{
+        padding:5px;
+        color: black;
+        background-color: #F9FCFB;
+        text-decoration:none;
+    }
+    h2{
+        text-align: center;
+        font-family: 'Source Sans 3', sans-serif;
+    }
+    p{
+        text-align:center;
+        color: #F9FCFB;
+        font-family: 'Source Sans 3', sans-serif;
+    
+    }
+    nav{
+    
+        text-align:end;
+        background-color: #1875D1;
+        padding:10px;
+        font-family: 'Montserrat', sans-serif;
+        
+        
+    }
+    form{
+        text-align:center; 
+        padding-bottom: 20px;
+        color: #F9FCFB;
+        font-family: 'Source Sans 3', sans-serif;
+    }
+    
+    #issue{
+        
+        margin-right: 55px;
+    }
+    #other{
+        margin-right: 107px;
+    }
+    #popout{
+        background-color: #0037AE;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .intro{
+        margin-left:50px;
+        margin-right: 50px;
+        
+    }
+    
+    #logo{
+        padding-top:20px;
+        height:200px;
+        
+    }
+    .logo{
+        text-align: center;
+    }
+    body{
+        margin:0;
+        padding:0;
+    }
+    /* unvisited link */
+    a:link {
+        text-decoration: none;
+        color: #F9FCFB;
+      }
       
-        <label for="name">NAME:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">EMAIL:</label><br>
-        <input type="text" id="email" name="email"><br>
-        <p>INTEREST</p>
-        <div id="buttons">
-        <input type="radio" id="collaboration" name="fav_language" value="HTML">
-        <label id="collaboration" for="html">Collaboration Request</label><br>
-        <input type="radio"  name="fav_language" value="CSS">
-        <label id="issue" for="css"> Issue Request</label><br>
-        <input type="radio" name="fav_language" value="JavaScript">
-        <label id="other"for="javascript">Other</label>
-        </div>
-        <br>
-        <label for="message">TELL US MORE:</label><br>
-        <input type="text" id="message" name="message"><br><br>
-        <button type="submit" id="submit">Submit</button>
-        
-        
+      /* visited link */
+      a:visited {
+        color: green;
+      }
       
-      </form> 
-    </div>
-      <h2 id="second_header">
-        Want to get involved?
-      </h2>
-      <div class="flex-container">
-
-        <div class="flex-child">
-          DM us on Twitter <br> Message<a href="https://twitter.com/make5calls" style="color:blue;">@make5calls</a>
-        </div>
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+      
+      /* selected link */
+      a:active {
+        color: #F9FCFB;
+      }
+      .flex-container {
+        display: flex;
+        gap: 10px;
         
-        <div class="flex-child">
-          Tell us how you'd like to help <br> Email hello@5calls.org
-        </div>
-
-        <div class="flex-child">
-           Contribute on Github <br> Browse our starter issues for  <a href="https://github.com/5calls/5calls#Front_End" style="color:blue;">Web,</a><a href="https://github.com/5calls/ios" style="color:blue;">IOS,</a> <a href="https://github.com/5calls/android" style="color:blue;">Android</a>
-        </div>
         
-      </div>
-      <footer>
+    }
+    
+    .flex-child {
+        flex-basis: 100%;
+        border: 2px solid black;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Source Sans 3', sans-serif;
+    
+    } 
+    footer{
+        text-align: center;
+        padding: 30px;
+    }
+    #submit{
+        border-radius: 5px;
+    }
 
-        <h2 class="visually-hidden">Footer Navigation</h2>
-
-        <div class="social-and-left-list">
-            <ul class="social-list" id="social-list" aria-labelledby="socialList">
-                <li><a href="https://twitter.com/make5calls" class="social-button" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/5calls/" class="social-button" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/make5calls" class="social-button" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://github.com/5calls/5calls" class="social-button" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-            </ul>
-
-    </footer>
-</body>
-</html>
+}
+    
+@media screen and (min-width: 1024px) { /* Styles for screens with a minimum width of 1024px (typical desktops and laptops) */ 
+    #message{
+        height: 60px;
+    }
+    
+    h1{
+        font-family: 'Bebas Neue', sans-serif;
+        SIZE: 2.5REM;
+        padding-top: 10px;
+        text-align:center;
+        color: #F9FCFB;
+    }
+    i{
+        color:#F9FCFB;
+    }
+    #donate{
+        padding:5px;
+        color: black;
+        background-color: #F9FCFB;
+        text-decoration:none;
+    }
+    h2{
+        text-align: center;
+        font-family: 'Source Sans 3', sans-serif;
+    }
+    p{
+        text-align:center;
+        color: #F9FCFB;
+        font-family: 'Source Sans 3', sans-serif;
+    
+    }
+    nav{
+    
+        text-align:end;
+        background-color: #1875D1;
+        padding:10px;
+        font-family: 'Montserrat', sans-serif;
+        
+        
+    }
+    form{
+        text-align:center; 
+        padding-bottom: 20px;
+        color: #F9FCFB;
+        font-family: 'Source Sans 3', sans-serif;
+    }
+    
+    #issue{
+        
+        margin-right: 55px;
+    }
+    #other{
+        margin-right: 107px;
+    }
+    #popout{
+        background-color: #0037AE;
+        margin-left: 370px;
+        margin-right: 370px;
+    }
+    .intro{
+        margin-left:50px;
+        margin-right: 50px;
+        
+    }
+    
+    #logo{
+        padding-top:20px;
+        height:200px;
+        
+    }
+    .logo{
+        text-align: center;
+    }
+    body{
+        margin:0;
+        padding:0;
+    }
+    /* unvisited link */
+    a:link {
+        text-decoration: none;
+        color: #F9FCFB;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+      
+      /* selected link */
+      a:active {
+        color: #F9FCFB;
+      }
+      .flex-container {
+        display: flex;
+        gap: 10px;
+        
+        
+    }
+    
+    .flex-child {
+        flex-basis: 100%;
+        border: 2px solid black;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Source Sans 3', sans-serif;
+    
+    } 
+    footer{
+        text-align: center;
+        padding: 30px;
+    }
+    #submit{
+        border-radius: 5px;
+    }
+}
+    
