@@ -171,6 +171,9 @@ form {
     justify-content: center;
 }
 */
+fieldset{
+    border: 0;
+}
 .sub {
     max-width: 600px;
     margin: auto;
@@ -224,8 +227,8 @@ button:hover {
  /* -------------footer----------------*/
 
 footer {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 
 }
 
@@ -250,8 +253,8 @@ footer ul {
 }
 
 footer {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 0.8rem;
     letter-spacing: 0.07em
@@ -261,7 +264,7 @@ footer ul  {
     list-style-type: none;
     Display: flex;
     Flex-direction: row;
-    padding: 10;
+    padding: 10px;
 }
 
 footer li a {
@@ -270,15 +273,18 @@ footer li a {
 }
 
 #left-list li {
-    margin-right: 10; 
+    margin-right: 10px; 
 }
 
 #list3 li {
-    margin-right: 10; 
+    margin-right: 10px; 
+}
+#list2 li {
+    margin-right: 10px; 
 }
 
 #social-list li {
-    margin-right: 10;
+    margin-right: 10px;
     font-size: 1.6rem; 
 }
 
@@ -286,22 +292,21 @@ footer li a {
     filter: brightness(0%); 
 }
 
-/* #social-list li:nth-child(1) a i{
-    color: rgb(29, 161, 242); /* Twitter * /
+#social-list li:nth-child(1) a i{
+    color: rgb(29, 161, 242); 
 }
 
 #social-list li:nth-child(2) a i {
-    color: rgb(234, 54, 97); /* Instagram * /
+    color: rgb(234, 54, 97);
 }
 
 #social-list li:nth-child(3) a i {
-    color: rgb(44, 101, 245); /* Facebook * /
+    color: rgb(44, 101, 245);
 }
 
 #social-list li:nth-child(4) a i {
-    color: rgb(140, 41, 255); /* GitHub * /
+    color: rgb(140, 41, 255);
 }
-*/
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -309,12 +314,15 @@ footer li a {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
 }
-
-@media screen and (min-width: 715px) {
+/* @media screen and (min-width: 715px) {
     
     .social-and-left-list {
         display: flex;
         justify-content: space-between;
     }
 
+} */
+.social-and-left-list {
+    display: flex;
+    justify-content: space-between;
 }
