@@ -139,12 +139,12 @@ p {
 }
 
 .banner {
-    background-color: #0037AE;
+    background-color: /*#0037AE*/ #B5C7E8;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 50vh;
-    color: #F9FCFB;
+    color: /*#F9FCFB*/ #0037AE;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,7 +182,7 @@ fieldset{
     border-radius: 10px;
     background-color: #0037AE;
     margin: 55px;
-    color: #F9FCFB
+    color: #F9FCFB;
 }
 
 form {
@@ -224,7 +224,7 @@ button:hover {
 }
 
 
- /* -------------footer----------------*/
+ /* -------------footer----------------* /
 
 footer {
     margin: 0px;
@@ -321,8 +321,105 @@ footer li a {
         justify-content: space-between;
     }
 
-} */
+} * /
 .social-and-left-list {
     display: flex;
     justify-content: space-between;
+}
+*/
+footer {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+footer ul {
+    list-style-type: none;
+    Display: flex;
+    Flex-direction: row;
+}
+
+.social-and-list2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-list li {
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+
+#social-list li a:active i {
+    filter: brightness(0%);
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.07em
+}
+
+footer ul  {
+    list-style-type: none;
+    Display: flex;
+    Flex-direction: row;
+    padding: 10px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+#left-list li {
+    margin-right: 10px; 
+}
+
+#list3 li {
+    margin-right: 10px; 
+}
+#list2 li {
+    margin-right: 10px; 
+}
+
+#social-list li {
+    margin-right: 10px;
+    font-size: 1.6rem; 
+}
+
+#social-list li a:active i {
+    filter: brightness(0%); 
+}
+
+ #social-list li:nth-child(1) a i{
+    color: rgb(29, 161, 242); 
+}
+
+#social-list li:nth-child(2) a i {
+    color: rgb(234, 54, 97);
+}
+
+#social-list li:nth-child(3) a i {
+    color: rgb(44, 101, 245); 
+}
+
+#social-list li:nth-child(4) a i {
+    color: rgb(140, 41, 255); 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.social-and-left-list {
+    display: flex;
+    justify-content: space-between;
+}
+#submit{
+    border-radius: 6px;
 }
